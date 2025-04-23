@@ -6,8 +6,14 @@
       <class name="firstProject.myTest">
         <methods>
           <include name="beforeTest"/>
+          <include name="isLastLetterIsT"/>
           <include name="reArrangeSalary"/>
           <include name="AfterTest"/>
+          <include name="removeAllItems"/>
+          <include name="loginTest"/>
+          <include name="printFirstLetter"/>
+          <include name="addAllItems"/>
+          <include name="printOfNameItemsNotIncludeDigits"/>
         </methods>
       </class> <!-- firstProject.myTest -->
     </classes>

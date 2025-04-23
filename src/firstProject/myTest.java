@@ -15,6 +15,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class myTest {
+	//this is first project 
 	WebDriver driver = new EdgeDriver();
 	String userName = "standard_user";
 	String passsword = "secret_sauce";
