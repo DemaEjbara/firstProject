@@ -1,11 +1,9 @@
 package firstProject;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -79,30 +77,7 @@ public class myTest {
 
 	@Test(priority = 6)
 	public void reArrangeSalary() {
-//    	System.out.println("lllllllllllllllllllllllllllllllllllllllllllllllllllll");
-//    	List<WebElement> pricesOfElements = driver.findElements(By.className("inventory_item_price"));
-//        List<WebElement> nameOfItems = driver.findElements(By.className("inventory_item_name"));
-//        Map<Double, List<String>> priceToNamesMap = new HashMap<>();
-//        for (int i = 0; i < pricesOfElements.size(); i++) {
-//            String priceText = pricesOfElements.get(i).getText().replace("$", "").trim();
-//            Double price = Double.parseDouble(priceText);
-//            String itemName = nameOfItems.get(i).getText();
-//
-//            if (!priceToNamesMap.containsKey(price)) {
-//                priceToNamesMap.put(price, new ArrayList<>());
-//            }
-//            priceToNamesMap.get(price).add(itemName);
-//        }
-//
-//        List<Double> sortedPrices = new ArrayList<>(priceToNamesMap.keySet());
-//        Collections.sort(sortedPrices);
-//
-//        System.out.println("low to haigh sorted");
-//        for (Double price : sortedPrices) {
-//            for (String name : priceToNamesMap.get(price)) {
-//                System.out.println(name + " - $" + price);
-//            }
-//        }
+
 		WebElement sortDrop = driver.findElement(By.className("product_sort_container"));
 		sortDrop.click();
 		WebElement sortPricesAsc = driver
@@ -147,30 +122,6 @@ public class myTest {
 		}
 	}
 
-//		List<WebElement> descItems = driver.findElements(By.className("inventory_item_desc"));
-//		boolean b = false;
-//		for (int i = 0; i < descItems.size(); i++) {
-//			String[] arr = descItems.get(i).getText().split(" ");
-//			for (int j = 0; j < arr.length; j++) {
-//				char[] u = arr[j].toCharArray();
-//				char [] k=descItems.get(i).getText().toCharArray();
-//				for (char r : u) {
-//					if (Character.isDigit(r)) {
-//						b = true;
-//						break;
-//					}
-//				}
-//				if (b) {
-//					break;
-//				}
-//
-//			}
-//			if(b) {
-//				System.out.println("this items is unavailabe");
-//			}
-//			else
-//				System.out.println(descItems.get(i).getText());
-//		}
 
 	@Test(priority = 3, enabled = false)
 	public void removeItemFromCart() throws InterruptedException {
